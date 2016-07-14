@@ -6,7 +6,7 @@ import time
 import RamHardDisk,hdfs1,mapred1
 
 system('./RamHardDisk.py >infoNodes.txt') 
-system('dialog --infobox "The host you are accessing will be client" 10 30')
+#system('dialog --infobox "The host you are accessing will be client" 10 30')
 time.sleep(3)
 system('dialog --textbox infoNodes.txt 15 70')
 system('dialog --inputbox "Enter ip address  for namenode" 10 5 2>/tmp/namenode.txt')
